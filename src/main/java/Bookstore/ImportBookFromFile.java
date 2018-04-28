@@ -19,7 +19,7 @@ public class ImportBookFromFile {
             line = csvReader.readLine();
             System.out.println(line);
         } catch (IOException e) {
-            System.out.println("bład odczytu");
+            System.out.println("Błąd odczytu");
         }
 
         while (line != null) {
@@ -29,7 +29,7 @@ public class ImportBookFromFile {
             try {
                 line = csvReader.readLine();
             } catch (IOException e) {
-                System.out.println("bład odczytu");
+                System.out.println("Błąd odczytu");
             }
         }
         return bookList;
