@@ -32,7 +32,7 @@ public class BookList {
 
         System.out.println("Lista książek dostępnych w księgarni : ");
         for (Book k : bookListItems) {
-            System.out.println("Nazwa : " + k.getTitle() + "  " + "ISBN : " + k.getRefNumber() + "  " + "Rok wydania : " + k.getYearOfPublication());
+            System.out.println(k.toString());
         }
     }
 

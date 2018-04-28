@@ -24,4 +24,10 @@ public class Book {
         return yearOfPublication;
     }
 
+    @Override
+    public String toString() {
+        return  "Tytuł : \'" + title + '\'' +
+                "   ISBN " + refNumber +
+                "   Rok publikacji " + yearOfPublication;
+    }
 }

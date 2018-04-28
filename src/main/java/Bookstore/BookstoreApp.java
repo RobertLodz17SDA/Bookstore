@@ -1,6 +1,5 @@
 package Bookstore;
 
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -22,6 +21,10 @@ public class BookstoreApp {
                 case 2:
                     bookList.printBookList();
                     break;
+                case 3 :
+                    GetBooksWithCriteria selected = new GetBooksWithCriteria();
+                    selected.getBooksListBeforeYear();
+                    break;
                 default:
                     System.out.println("Niewłaściwa opcja. Wybierz jeszcze raz");
                     System.out.println();
@@ -32,7 +35,6 @@ public class BookstoreApp {
     }
 
     private static int getInput(Scanner scanner) {
-
         int option;
         while (true) {
             printMenu();
@@ -47,7 +49,7 @@ public class BookstoreApp {
         return option;
     }
 
-    public static void printMenu() {
+    private static void printMenu() {
         System.out.println("Księgarnia SDA");
         System.out.println("ul. Książkowa 12");
         System.out.println("email : ksiegarnia@sda.pl");
@@ -55,6 +57,7 @@ public class BookstoreApp {
         System.out.print("Wybierz opcję programu : ");
         System.out.print("1-Wyjście z programu  ");
         System.out.print("2-Lista dostępnych pozycji  ");
+        System.out.print("3-Lista książek wydanych przed .... rokiem");
         System.out.println();
     }
 }
