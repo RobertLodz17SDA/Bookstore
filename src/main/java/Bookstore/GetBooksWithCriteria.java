@@ -29,6 +29,7 @@ public class GetBooksWithCriteria {
                 .stream()
                 .filter(e -> e.getYearOfPublication() <= finalYear)
                 .collect(Collectors.toList());
+
 //        for (Book b : bookList.getBookListItems()){
 //            if (b.getYearOfPublication()<= year){
 //booksExists = true;
