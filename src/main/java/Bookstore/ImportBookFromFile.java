@@ -24,7 +24,7 @@ public class ImportBookFromFile {
 
         while (line != null) {
             String[] lineElements = line.split(SEMICOLON);
-            Book ksiazka = new Book(lineElements[0], Integer.parseInt(lineElements[1]), Integer.parseInt(lineElements[2]));
+            Book ksiazka = new Book(lineElements[0], lineElements[1], Integer.parseInt(lineElements[2]));
             bookList.addBook(ksiazka);
             try {
                 line = csvReader.readLine();
