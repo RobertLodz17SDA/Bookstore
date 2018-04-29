@@ -1,23 +1,27 @@
 package Bookstore;
 
-public class Book {
+public class Book implements Comparable{
 
     private String title;
-    private int refNumber;
+    private String numberISDN;
     private int yearOfPublication;
 
-    Book(String title, int refNumber, int year) {
+    Book(String title, String numberISDN, int year) {
         this.title = title;
-        this.refNumber = refNumber;
+        this.numberISDN = numberISDN;
         this.yearOfPublication = year;
+    }
+
+    public void setYearOfPublication(int yearOfPublication) {
+        this.yearOfPublication = yearOfPublication;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getRefNumber() {
-        return refNumber;
+    public String getNumberISDN() {
+        return numberISDN;
     }
 
     public int getYearOfPublication() {
@@ -27,7 +31,14 @@ public class Book {
     @Override
     public String toString() {
         return  "Tytuł : \'" + title + '\'' +
-                "   ISBN " + refNumber +
+                "   ISBN " + numberISDN +
                 "   Rok publikacji " + yearOfPublication;
+    }
+
+    public int compareTo(Object anotherBook) throws ClassCastException {
+        if (!(anotherBook instanceof Book))
+            throw new ClassCastException("A Book object expected.");
+        int anotherBookYear = ((Book) anotherBook).getYearOfPublication();
+        return this.yearOfPublication - anotherBookYear;
     }
 }
