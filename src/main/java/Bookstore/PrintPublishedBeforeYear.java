@@ -5,18 +5,16 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class GetBooksWithCriteria {
+public class PublishedBeforeYear {
 
     private BookList bookList = BookList.getBookListInstance();
 
     public void getBooksListBeforeYear() {
         int year;
-        Scanner scanner;
-        boolean booksExists = false;
+        Scanner scanner= new Scanner(System.in);
         while (true) {
             try {
                 System.out.print("Podaj rok graniczny : ");
-                scanner = new Scanner(System.in);
                 year = scanner.nextInt();
                 break;
             } catch (InputMismatchException e) {
@@ -30,12 +28,6 @@ public class GetBooksWithCriteria {
                 .filter(e -> e.getYearOfPublication() <= finalYear)
                 .collect(Collectors.toList());
 
-//        for (Book b : bookList.getBookListItems()){
-//            if (b.getYearOfPublication()<= year){
-//booksExists = true;
-//                System.out.println(b);
-//            }
-//        }
         if (filteredBooks.isEmpty()) {
             System.out.println("Nie znaleziono książek wydanych przed rokiem " + year);
         }else{
