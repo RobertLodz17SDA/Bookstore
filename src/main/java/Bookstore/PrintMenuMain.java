@@ -23,6 +23,8 @@ public class PrintMenuMain implements PrintMenuChoice {
             System.out.println("14-Zlecenie druku książki    ");
             System.out.println("15-Zmiana wieku ulubionego autora    ");
             System.out.println("16-Zapis kategorii książek do pliku CSV    ");
+            System.out.println("17-Wydruk listy książek autora :    ");
+            System.out.println("18-Dodawanie nowej kategorii    ");
             System.out.println();
         }
 }

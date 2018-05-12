@@ -2,44 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8f12399-422f-4e7e-8336-caabe0a123a7" name="Default" comment="some changes">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/EditAuthorAge.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/WriteCategoriesToCSV.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/AddNewCategory.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Ksiegarnia.iml" afterPath="$PROJECT_DIR$/Ksiegarnia.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/Book.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/Book.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthorList.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthorList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/BookCategory.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/BookCategory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/BookCategoryList.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/BookCategoryList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/BooksFunctions.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/BooksFunctions.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/EditBookName.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/EditBookName.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/ImportAuthorsFromFile.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/ImportAuthorsFromFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/ImportBookFromFile.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/ImportBookFromFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/ImportCategoriesFromFile.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/ImportCategoriesFromFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrint.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrint.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrintHardCover.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrintHardCover.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrintSoftCover.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrintSoftCover.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/OrderProperBookPrint.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintAutorsAndPublishedBooksNumber.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintAutorsAndPublishedBooksNumber.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksAsOptions.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksAsOptions.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksChoices.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksChoices.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksITY.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksITY.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksTYI.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksTYI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksYTI.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksYTI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuChoice.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuChoice.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksByAuthor.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksByAuthor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuNone.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuNone.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/PrintPublishedBeforeYear.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/PrintPublishedBeforeYear.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bookstore/WriteAuthorFileToCSV.java" afterPath="$PROJECT_DIR$/src/main/java/Bookstore/WriteAuthorFileToCSV.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/books.csv" afterPath="$PROJECT_DIR$/src/main/resources/books.csv" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Bookstore/BooksFunctionsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Bookstore/BooksFunctionsTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bookstore/Book.class" afterPath="$PROJECT_DIR$/target/classes/Bookstore/Book.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/Bookstore/BookstoreApp.class" afterPath="$PROJECT_DIR$/target/classes/Bookstore/BookstoreApp.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bookstore/GetBooksWithCriteria.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bookstore/ImportBookFromFile.class" afterPath="$PROJECT_DIR$/target/classes/Bookstore/ImportBookFromFile.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/books.csv" afterPath="$PROJECT_DIR$/target/classes/books.csv" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Bookstore/PrintMenuMain.class" afterPath="$PROJECT_DIR$/target/classes/Bookstore/PrintMenuMain.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,27 +20,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="WriteAuthorFileToCSV.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/WriteAuthorFileToCSV.java">
+    <leaf>
+      <file leaf-file-name="AddNewCategory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/AddNewCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="594">
+              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WriteCategoriesToCSV.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/WriteCategoriesToCSV.java">
+      <file leaf-file-name="BookstoreApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-71">
+              <caret line="105" column="54" lean-forward="true" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintMenuMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,76 +56,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
               <caret line="20" column="5" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditBookName.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/EditBookName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditAuthorAge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/EditAuthorAge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookstoreApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
-              <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintMenuMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookAuthor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-              <folding>
-                <element signature="e#204#205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookAuthorList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookAuthorList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -181,8 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/KsiegarniaApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Ksiegarnia/PrintBookList.java" />
         <option value="$PROJECT_DIR$/src/main/java/Ksiegarnia/KsiegarniaApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/Ksiegarnia/ImportBookFromFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/Ksiegarnia/Ksiazka.java" />
@@ -225,13 +129,15 @@
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/BooksFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/OrderBookPrintHardCover.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthorList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/EditAuthorAge.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/BookCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/WriteAuthorFileToCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/WriteCategoriesToCSV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksByAuthor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bookstore/AddNewCategory.java" />
       </list>
     </option>
   </component>
@@ -262,8 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,8 +205,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,7 +548,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1858217" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18850698" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18689582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -677,10 +583,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5085519" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5085519" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18313642" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18850698" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -708,20 +614,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/ImportBookFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Bookstore/BooksFunctionsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1674">
@@ -992,61 +884,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookAuthorList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/EditAuthorAge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/WriteAuthorFileToCSV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1058,21 +901,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/WriteCategoriesToCSV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/EditAuthorAge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookAuthorList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/PrintBooksByAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/PrintMenuMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/BookstoreApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="105" column="54" lean-forward="true" selection-start-line="105" selection-start-column="54" selection-end-line="105" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bookstore/AddNewCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

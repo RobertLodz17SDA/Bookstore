@@ -99,6 +99,12 @@ public class BookstoreApp {
                         e.printStackTrace();
                     }
                     break;
+                case 17 :
+                    PrintBooksByAuthor.printByAuthorsID();
+                    break;
+                case 18 :
+                    AddNewCategory.enterNewCategory();
+                    break;
                 default:
                     System.out.println("Niewłaściwa opcja. Wybierz jeszcze raz");
                     System.out.println();
