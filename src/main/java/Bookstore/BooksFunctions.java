@@ -1,18 +1,18 @@
 package Bookstore;
 
+import java.awt.event.ItemEvent;
+import java.text.Collator;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class BooksFunctions {
 
 
-    public Optional<Book> findBookByISBN(List<Book> bookList, String numberISBN) {
-
-        Optional<Book> first = bookList.stream().filter(book -> book.getNumberISDN().equals(numberISBN)).findFirst();
-        if (first.isPresent()) {
-            return first;
+    public static Book findBookByISBN(List<Book> bookList, String numberISBN) {
+        if (bookList.stream().anyMatch(book -> book.getNumberISBN().equals(numberISBN))) {
+            return bookList.stream().filter(book -> book.getNumberISBN().equals(numberISBN)).findFirst().get();
         } else return null;
     }
 
@@ -22,13 +22,12 @@ public class BooksFunctions {
 
     public List<Book> getTwoLastBooks(List<Book> bookList) {
         List<Book> list = new ArrayList<>();
-        System.out.println(bookList.size());
         if (bookList.size() >= 2) {
             list.add(bookList.get(bookList.size() - 2));
-            list.add(bookList.get(bookList.size()-1));
+            list.add(bookList.get(bookList.size() - 1));
         } else if (bookList.size() == 1) {
-            list.add(bookList.get(bookList.size()-1));
-        } else list = null;
+            list.add(bookList.get(bookList.size() - 1));
+        }
         return list;
     }
 
@@ -37,7 +36,7 @@ public class BooksFunctions {
         List<Book> list1;
         List<Book> list2 = new ArrayList<>();
         list1 = bookList.stream().sorted().collect(Collectors.toList());
-        for (int i = list1.size() - 1; i == 0; i--) {
+        for (int i = list1.size() - 1; i >= 0; i--) {
             list2.add(list1.get(i));
         }
         return list2;
@@ -47,7 +46,7 @@ public class BooksFunctions {
         Book book = bookList.get(0);
         for (Book book1 : bookList) {
             if (book1.getYearOfPublication() < book.getYearOfPublication()) {
-                book = book1;
+                book.cloneBook(book1);
             }
         }
         return book;
@@ -57,7 +56,7 @@ public class BooksFunctions {
         Book book = bookList.get(0);
         for (Book book1 : bookList) {
             if (book1.getYearOfPublication() > book.getYearOfPublication()) {
-                book = book1;
+                book.cloneBook(book1);
             }
         }
         return book;
@@ -71,8 +70,8 @@ public class BooksFunctions {
         return sumOfYearsPublished;
     }
 
-    public long numberOfBooksPublishedAfter(List<Book> bookList) {
-        return bookList.stream().filter(book -> book.getYearOfPublication() > 20007).count();
+    public long numberOfBooksPublishedAfter2007(List<Book> bookList) {
+        return bookList.stream().filter(book -> book.getYearOfPublication() > 2007).count();
     }
 
     public boolean allBooksPublishedAfter2000(List<Book> bookList) {
@@ -89,7 +88,7 @@ public class BooksFunctions {
         return sumOfYears / bookList.size();
     }
 
-    public boolean anyBookPublishedAfter2000(List<Book> bookList) {
+    public boolean anyBookPublishedBefore2000(List<Book> bookList) {
         for (Book book : bookList) {
             if (book.getYearOfPublication() < 2000) {
                 return true;
@@ -123,16 +122,16 @@ public class BooksFunctions {
 
     public static void main(String[] args) {
 
-        List<Book> books = new ArrayList<>();
-        BooksFunctions functions = new BooksFunctions();
-
-        books.add(new Book("Clean Code", "0132350882", 2008));
-        books.add(new Book("Effective Java", "0134685997", 2018));
-        books.add(new Book("Test Driven Development", "0321146530", 2003));
-        books.add(new Book("Patterns of Enterprise Application Architecture", "0321127420", 2002));
-        books.add(new Book("Head First Design Patterns", "0596007124", 2004));
-        books = functions.sortBooksByYearAscending(books);
-        System.out.println(functions.getTwoLastBooks(books).toString());
-        System.out.println(books);
+//        List<Book> books = new ArrayList<>();
+//        BooksFunctions functions = new BooksFunctions();
+//
+//        books.add(new Book("Clean Code", "0132350882", 2008,'M',["1"], 2));
+//        books.add(new Book("Effective Java", "0134685997", 2018,'K',[2],3));
+//        books.add(new Book("Test Driven Development", "0321146530", 2003));
+//        books.add(new Book("Patterns of Enterprise Application Architecture", "0321127420", 2002));
+//        books.add(new Book("Head First Design Patterns", "0596007124", 2004));
+//        books = functions.sortBooksByYearAscending(books);
+//        System.out.println(functions.getTwoLastBooks(books).toString());
+//        System.out.println(books);
     }
 }

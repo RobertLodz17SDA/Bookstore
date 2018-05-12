@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class PublishedBeforeYear {
+public class PrintPublishedBeforeYear {
 
-    private BookList bookList = BookList.getBookListInstance();
+    public static int printBooksListPublishedBeforeYear() {
 
-    public void getBooksListBeforeYear() {
+        BookList bookList = BookList.getBookListInstance();
         int year;
         Scanner scanner= new Scanner(System.in);
         while (true) {
@@ -33,5 +33,6 @@ public class PublishedBeforeYear {
         }else{
             filteredBooks.forEach(System.out::println);
         }
+        return year;
     }
 }
