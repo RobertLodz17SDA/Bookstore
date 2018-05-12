@@ -105,6 +105,9 @@ public class BookstoreApp {
                 case 18 :
                     AddNewCategory.enterNewCategory();
                     break;
+                case 19 :
+                    PrintBooksByCategory.printByCategoryID();
+                    break;
                 default:
                     System.out.println("Niewłaściwa opcja. Wybierz jeszcze raz");
                     System.out.println();
