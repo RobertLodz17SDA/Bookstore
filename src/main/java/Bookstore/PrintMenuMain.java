@@ -26,6 +26,7 @@ public class PrintMenuMain implements PrintMenuChoice {
             System.out.println("17-Wydruk listy książek autora :    ");
             System.out.println("18-Dodawanie nowej kategorii    ");
             System.out.println("19-Wydruk listy książek dla kategorii    ");
+            System.out.println("20-Wydruk listy płac    ");
             System.out.println();
         }
 }

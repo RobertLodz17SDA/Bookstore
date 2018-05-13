@@ -1,12 +1,17 @@
 package Bookstore;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 import static Bookstore.WriteAuthorFileToCSV.authorWriterToCSV;
 
 public class BookstoreApp {
+
+    private static final PrintMenuMain printMenuMain = new PrintMenuMain();
+    private static final PrintMenuNone printMenuNone = new PrintMenuNone();
 
     public static void main(String[] args) {
 
@@ -14,7 +19,6 @@ public class BookstoreApp {
         BookCategoryList bookCategoryList = ImportCategoriesFromFile.importFromCSV();
         BookList bookList = ImportBookFromFile.csvBookImport();
         BooksFunctions bookFunctions = new BooksFunctions();
-
         bookstoreMenu(bookAuthorList, bookCategoryList, bookList, bookFunctions);
         System.out.println("Dziękujemy za korzystanie z Księgarni :-)");
     }
@@ -23,7 +27,7 @@ public class BookstoreApp {
                                       BookCategoryList bookCategoryList,
                                       BookList bookList,
                                       BooksFunctions bookFunctions) {
-        int input = getIntegerInput(new PrintMenuMain());
+        int input = getIntegerInput(printMenuMain);
         while (input != 0) {
             switch (input) {
                 case 1:
@@ -44,20 +48,20 @@ public class BookstoreApp {
                             .getEarliestPublishedBook(bookList.getBookListItems())
                             .getTitle());
                     break;
-                case 5 :
-                    System.out.println("Ilość książek publikowanych przed 2007 rokiem :" );
+                case 5:
+                    System.out.println("Ilość książek publikowanych przed 2007 rokiem :");
                     System.out.println(bookFunctions
                             .numberOfBooksPublishedAfter2007(bookList.getBookListItems()));
                     break;
-                case 6 :
+                case 6:
                     System.out.println("Lista tytułów publikowanych w latach parzystych : ");
                     System.out.println(bookFunctions
                             .returnAllTitlesWhosePublishedYearIsMod2(bookList.getBookListItems()));
                     break;
-                case 7 :
-                    System.out.println("Lista tytułów publikowanych przed rokiem "+PrintPublishedBeforeYear.printBooksListPublishedBeforeYear());
+                case 7:
+                    System.out.println("Lista tytułów publikowanych przed rokiem " + PrintPublishedBeforeYear.printBooksListPublishedBeforeYear());
                     break;
-                case 8 :
+                case 8:
                     PrintBooksAsOptions.printBooks(bookList.getBookListItems());
                     break;
                 case 9:
@@ -73,10 +77,10 @@ public class BookstoreApp {
                 case 11:
                     PrintAutorsAndPublishedBooksNumber.printAutorsAndNumbers();
                     break;
-                case 12 :
+                case 12:
                     EditBookName.editBookName();
                     break;
-                case 13 :
+                case 13:
                     try {
                         authorWriterToCSV();
                     } catch (IOException e) {
@@ -84,14 +88,14 @@ public class BookstoreApp {
                         e.printStackTrace();
                     }
                     break;
-                case 14 :
+                case 14:
                     System.out.print("Podaj numer ISBN książki do druku : ");
-                    OrderBookPrint.chooseAndPrintBookByISBN(getStringInput(new PrintMenuNone()));
+                    OrderBookPrint.chooseAndPrintBookByISBN(getStringInput(printMenuNone));
                     break;
-                case 15 :
+                case 15:
                     EditAuthorAge.editAuthorAge();
                     break;
-                case 16 :
+                case 16:
                     try {
                         WriteCategoriesToCSV.categoriesWriterToCSV();
                     } catch (IOException e) {
@@ -99,14 +103,17 @@ public class BookstoreApp {
                         e.printStackTrace();
                     }
                     break;
-                case 17 :
+                case 17:
                     PrintBooksByAuthor.printByAuthorsID();
                     break;
-                case 18 :
+                case 18:
                     AddNewCategory.enterNewCategory();
                     break;
-                case 19 :
+                case 19:
                     PrintBooksByCategory.printByCategoryID();
+                    break;
+                case 20:
+                    printSalaries(setEmployees());
                     break;
                 default:
                     System.out.println("Niewłaściwa opcja. Wybierz jeszcze raz");
@@ -149,5 +156,25 @@ public class BookstoreApp {
         return option;
     }
 
+    public static List<BookstoreEmpoyee> setEmployees() {
 
+        List<BookstoreEmpoyee> bookstoreEmpoyees = new ArrayList<>();
+
+        bookstoreEmpoyees.add(new BookstoreManager("Zenon", "Laskowski", "zenonlaskowski@gmail.com", 34, 'M', 600347222, 21));
+        bookstoreEmpoyees.add(new BookstoreManager("Alicja", "kowalska", "alicjakowalska@gmail.com", 24, 'F', 600347223, 20));
+        bookstoreEmpoyees.add(new BookstoreSalesPerson("Alicja", "Jóźwiak", "alicjajozwiak@gmail.com", 40, 'F', 2800));
+        bookstoreEmpoyees.add(new BookstoreSalesPerson("Marek", "Stachowiak", "marekstachowiak@gmail.com", 29, 'M', 2800));
+        bookstoreEmpoyees.add(new BookstoreSalesPerson("Stanisław", "Rybak", "stanislawrybak@gmail.com", 36, 'M', 3100));
+        bookstoreEmpoyees.add(new BookstoreSalesPerson("Zofia", "Stachura", "zofiastachura@gmail.com", 32, 'F', 2500));
+        bookstoreEmpoyees.add(new BookstoreIntern("Katarzyna", "Stachurska", "katarzynastachurska@gmail.com", 23, 'F', 12));
+        bookstoreEmpoyees.add(new BookstoreIntern("Ryszard", "Lubecki", "ryszardlubecki@gmail.com", 22, 'M', 12));
+
+        return bookstoreEmpoyees;
+    }
+
+    public static void printSalaries(List<BookstoreEmpoyee> bookstoreEmpoyees) {
+        bookstoreEmpoyees.stream()
+                .forEach(bookstoreEmpoyee -> System.out.println(bookstoreEmpoyee.getFirstName() + " " + bookstoreEmpoyee.getFamilyName() + " wypłata " + bookstoreEmpoyee.getSalaryInformation(160)));
+
+    }
 }
