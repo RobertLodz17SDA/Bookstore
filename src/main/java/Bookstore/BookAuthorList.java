@@ -32,6 +32,7 @@ public class BookAuthorList {
     public void printBookAurhorList() {
 
         System.out.println("Lista autorów książek dostępnych w księgarni : ");
+        System.out.println();
         for (BookAuthor k : bookAuthorItems) {
             System.out.println(k.toString());
         }
@@ -41,23 +42,39 @@ public class BookAuthorList {
         bookAuthorItems.add(bookAuthor);
     }
 
-    public void addNewAuthor(){
-        String authorID;
-        String authorNameFamilyName;
-        int authorAge;
-        Scanner scanner = new Scanner(System.in);
+    public void addNewAuthor() {
+
         System.out.print("Podaj identyfikator autora : ");
-        authorID = BookstoreApp.getStringInput(new PrintMenuNone());
+        String authorID = BookstoreApp.getStringInput(new PrintMenuNone());
+        while (authorExists(authorID)) {
+            System.out.print("Podany identyfikator autora już istnieje. podaj inny : ");
+            authorID = BookstoreApp.getStringInput(new PrintMenuNone());
+        }
         System.out.print("Podaj imię i nazwisko autora : ");
-        authorNameFamilyName = BookstoreApp.getStringInput(new PrintMenuNone());
+        String authorNameFamilyName = BookstoreApp.getStringInput(new PrintMenuNone());
         System.out.print("Podaj wiek autora : ");
-        authorAge = BookstoreApp.getIntegerInput(new PrintMenuNone());
+        int authorAge = BookstoreApp.getIntegerInput(new PrintMenuNone());
         BookAuthor newAuthor = new BookAuthor(authorID, authorNameFamilyName, authorAge);
         addBookAuthor(newAuthor);
     }
 
-    public static BookAuthor getAuthorByID(String authorID){
-        return bookAuthorItems.stream().filter(bookAuthor -> bookAuthor.getAuthorID().equals(authorID)).findFirst().get();
+    public static BookAuthor getAuthorByID(String authorID) {
+        if (authorExists(authorID)) {
+            return bookAuthorItems
+                    .stream()
+                    .filter(bookAuthor -> bookAuthor.getAuthorID().equals(authorID))
+                    .findFirst().get();
+        } else return null;
     }
 
+    public static boolean authorExists(String author) {
+        if (BookAuthorList
+                .getBookAuthorListInstance()
+                .getBookAuthorItems()
+                .stream()
+                .anyMatch(author1 -> author1.getAuthorID().equals(author))) {
+            return true;
+        }
+        return false;
+    }
 }

@@ -18,7 +18,6 @@ public class Book implements Comparable {
     private BookCategory category;
 
 
-
     public Book(String title, String numberISBN, int yearOfPublication, char cover, List<BookAuthor> authorsList, BookCategory category) {
         this.title = title;
         this.numberISBN = numberISBN;
@@ -34,7 +33,7 @@ public class Book implements Comparable {
         this.yearOfPublication = yearOfPublication;
     }
 
-    public Book(){
+    public Book() {
         this.title = "";
         this.numberISBN = "";
         this.yearOfPublication = 0;
@@ -77,15 +76,29 @@ public class Book implements Comparable {
     public String toString() {
         return "Tytuł : \'" + getTitle() + '\'' +
                 "   Rok publikacji : " + getYearOfPublication() +
-                "   ISBN : " + getNumberISBN()+ "  Okładka : "+ getCover()+" Autor : "+ authorsPrintList() + " Kategoria : "+ category.getCategoryName();
+                "   ISBN : " + getNumberISBN() + "  Okładka : " + getCover() + " Autor : " + authorsPrintList() + " Kategoria : " + category.getCategoryName();
     }
 
-    private StringBuilder authorsPrintList(){
+    public String toString(char separator) {
+        return title + separator + yearOfPublication +
+                separator + numberISBN + separator + cover
+                + separator + authorsCommaSeparated() + separator + category.getCategoryID();
+    }
+
+    private StringBuilder authorsPrintList() {
         StringBuilder authors = new StringBuilder();
-        for (BookAuthor author : authorsList){
+        for (BookAuthor author : authorsList) {
             authors.append(author.getAuthorNameFamilyName() + " / ");
         }
-        return authors.delete(authors.length()-3, authors.length()-1);
+        return authors.delete(authors.length() - 3, authors.length() - 1);
+    }
+
+    public StringBuilder authorsCommaSeparated() {
+        StringBuilder authors = new StringBuilder();
+        for (BookAuthor author : authorsList) {
+            authors.append(author.getAuthorID() + ',');
+        }
+        return authors.deleteCharAt(authors.length()-1);
     }
 
     public char getCover() {

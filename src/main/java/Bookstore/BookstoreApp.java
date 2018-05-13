@@ -31,15 +31,12 @@ public class BookstoreApp {
         while (input != 0) {
             switch (input) {
                 case 1:
-                    System.out.println("Lista dostępnych książek : ");
                     bookList.printBookList();
                     break;
                 case 2:
-                    System.out.println("Lista dostępnych autorów : ");
                     bookAuthorList.printBookAurhorList();
                     break;
                 case 3:
-                    System.out.println("Lista dostępnych kategorii : ");
                     bookCategoryList.printCategoryList();
                     break;
                 case 4:
@@ -107,13 +104,28 @@ public class BookstoreApp {
                     PrintBooksByAuthor.printByAuthorsID();
                     break;
                 case 18:
-                    AddNewCategory.enterNewCategory();
+                    AddNewCategory.putCategoryToList(AddNewCategory.enterNewCategory());
                     break;
                 case 19:
                     PrintBooksByCategory.printByCategoryID();
                     break;
                 case 20:
                     printSalaries(setEmployees());
+                    break;
+                case 21:
+                    try {
+                        WriteBooksToCSV.booksWriterToCSV();
+                    } catch (IOException e) {
+                        System.out.print("Plik nie zapisany z powodu błędu : ");
+                        e.printStackTrace();
+                    }
+                    break;
+
+                case 22:
+                    SaveStateinformation.saveStateInfo();
+                    break;
+                case 23 :
+                    AddNewBook.enterNewBook();
                     break;
                 default:
                     System.out.println("Niewłaściwa opcja. Wybierz jeszcze raz");
@@ -128,7 +140,6 @@ public class BookstoreApp {
         int option;
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println();
             printMenuChoice.printMenu();
             try {
                 option = scanner.nextInt();
@@ -144,7 +155,6 @@ public class BookstoreApp {
         String option;
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println();
             printMenuChoice.printMenu();
             try {
                 option = scanner.nextLine();
@@ -158,18 +168,18 @@ public class BookstoreApp {
 
     public static List<BookstoreEmpoyee> setEmployees() {
 
-        List<BookstoreEmpoyee> bookstoreEmpoyees = new ArrayList<>();
+        List<BookstoreEmpoyee> bookstoreEmployees = new ArrayList<>();
 
-        bookstoreEmpoyees.add(new BookstoreManager("Zenon", "Laskowski", "zenonlaskowski@gmail.com", 34, 'M', 600347222, 21));
-        bookstoreEmpoyees.add(new BookstoreManager("Alicja", "kowalska", "alicjakowalska@gmail.com", 24, 'F', 600347223, 20));
-        bookstoreEmpoyees.add(new BookstoreSalesPerson("Alicja", "Jóźwiak", "alicjajozwiak@gmail.com", 40, 'F', 2800));
-        bookstoreEmpoyees.add(new BookstoreSalesPerson("Marek", "Stachowiak", "marekstachowiak@gmail.com", 29, 'M', 2800));
-        bookstoreEmpoyees.add(new BookstoreSalesPerson("Stanisław", "Rybak", "stanislawrybak@gmail.com", 36, 'M', 3100));
-        bookstoreEmpoyees.add(new BookstoreSalesPerson("Zofia", "Stachura", "zofiastachura@gmail.com", 32, 'F', 2500));
-        bookstoreEmpoyees.add(new BookstoreIntern("Katarzyna", "Stachurska", "katarzynastachurska@gmail.com", 23, 'F', 12));
-        bookstoreEmpoyees.add(new BookstoreIntern("Ryszard", "Lubecki", "ryszardlubecki@gmail.com", 22, 'M', 12));
+        bookstoreEmployees.add(new BookstoreManager("Zenon", "Laskowski", "zenonlaskowski@gmail.com", 34, 'M', 600347222, 21));
+        bookstoreEmployees.add(new BookstoreManager("Alicja", "kowalska", "alicjakowalska@gmail.com", 24, 'F', 600347223, 20));
+        bookstoreEmployees.add(new BookstoreSalesPerson("Alicja", "Jóźwiak", "alicjajozwiak@gmail.com", 40, 'F', 2800));
+        bookstoreEmployees.add(new BookstoreSalesPerson("Marek", "Stachowiak", "marekstachowiak@gmail.com", 29, 'M', 2800));
+        bookstoreEmployees.add(new BookstoreSalesPerson("Stanisław", "Rybak", "stanislawrybak@gmail.com", 36, 'M', 3100));
+        bookstoreEmployees.add(new BookstoreSalesPerson("Zofia", "Stachura", "zofiastachura@gmail.com", 32, 'F', 2500));
+        bookstoreEmployees.add(new BookstoreIntern("Katarzyna", "Stachurska", "katarzynastachurska@gmail.com", 23, 'F', 12));
+        bookstoreEmployees.add(new BookstoreIntern("Ryszard", "Lubecki", "ryszardlubecki@gmail.com", 22, 'M', 12));
 
-        return bookstoreEmpoyees;
+        return bookstoreEmployees;
     }
 
     public static void printSalaries(List<BookstoreEmpoyee> bookstoreEmpoyees) {

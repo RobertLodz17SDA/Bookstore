@@ -33,6 +33,7 @@ public class BookCategoryList {
 
     public void printCategoryList() {
         System.out.println("Lista kategorii książek dostępnych w księgarni : ");
+        System.out.println();
         for (BookCategory k : bookCategoryItems) {
             System.out.println(k.toString());
         }

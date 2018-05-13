@@ -31,6 +31,7 @@ public class BookList {
     public void printBookList() {
 
         System.out.println("Lista książek dostępnych w księgarni : ");
+        System.out.println();
         for (Book k : bookListItems) {
             System.out.println(k.toString());
         }
